@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Laravel SB Admin 2">
-    <meta name="author" content="Alejandro RH">
+    <meta name="description" content="QA Automation Tradesoft">
+    <meta name="author" content="Glushkov Ivan">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -30,11 +30,11 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{route('home')}}">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">QA Automation</div>
         </a>
 
         <!-- Divider -->
@@ -45,6 +45,20 @@
             <a class="nav-link" href="{{ route('home') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>{{ __('Dashboard') }}</span></a>
+        </li>
+
+        <li class="nav-item {{ Nav::isRoute('statistic') }}">
+            <a class="nav-link" href="{{ route('statistic') }}">
+                <i class="fas fa-fw fa-chart-line"></i>
+                <span>Stat visualise</span>
+            </a>
+        </li>
+
+        <li class="nav-item {{ Nav::isRoute('pipeline') }}">
+            <a class="nav-link" href="{{ route('pipeline') }}">
+                <i class="fas fa-fw fa-chart-pie"></i>
+                <span>Pipeline</span>
+            </a>
         </li>
 
         <!-- Divider -->
@@ -62,22 +76,6 @@
                 <span>{{ __('Profile') }}</span>
             </a>
         </li>
-
-        <!-- Nav Item - About -->
-        <li class="nav-item {{ Nav::isRoute('about') }}">
-            <a class="nav-link" href="{{ route('about') }}">
-                <i class="fas fa-fw fa-hands-helping"></i>
-                <span>{{ __('About') }}</span>
-            </a>
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
 
     </ul>
     <!-- End of Sidebar -->
