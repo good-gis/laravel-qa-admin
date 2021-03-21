@@ -14,12 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/login', 301);
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/profile', 'ProfileController@index')->name('profile');
 Route::put('/profile', 'ProfileController@update')->name('profile.update');
@@ -30,4 +28,4 @@ Route::get('/statistic', function () {
 
 Route::get('/pipeline', function () {
     return view('pipeline');
-})->name('pipeline');
+})->name('home');

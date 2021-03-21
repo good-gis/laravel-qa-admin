@@ -19,9 +19,6 @@
         <div class="col-lg-4 order-lg-2">
 
             <div class="card shadow mb-4">
-                <div class="card-profile-image mt-4">
-                    <figure class="rounded-circle avatar avatar font-weight-bold" style="font-size: 60px; height: 180px; width: 180px;" data-initial="{{ Auth::user()->name[0] }}"></figure>
-                </div>
                 <div class="card-body">
 
                     <div class="row">
@@ -34,22 +31,10 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-12">
                             <div class="card-profile-stats">
-                                <span class="heading">22</span>
-                                <span class="description">Friends</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-profile-stats">
-                                <span class="heading">10</span>
-                                <span class="description">Photos</span>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card-profile-stats">
-                                <span class="heading">89</span>
-                                <span class="description">Comments</span>
+                                <span class="heading">15</span>
+                                <span class="description">Projects</span>
                             </div>
                         </div>
                     </div>
