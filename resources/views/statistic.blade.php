@@ -1,13 +1,13 @@
 @extends('layouts.admin')
 
-{{--<a href="{{ asset('/css/statistic/main.css') }}" rel="stylesheet"></a>--}}
+<link href="{{ asset('css/statistic/main.css') }}" rel="stylesheet">
 
 @section('main-content')
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800">{{ __('Statistic') }}</h1>
 
-    <div class="flex-row justify-content-center">
+    <div class="container-fluid">
         <div id="chartdiv"></div>
         <input onchange="readFile(this)" type="file">
     </div>
